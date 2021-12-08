@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numberators</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <div class="attempts" id="at">
+        <h2>No of attempts</h2>
+        <div class="attempt-box" id="no"></div>
+    </div>
+    <div class="box">
+        <div class="left">
+            <img src="images/image1.svg">
+        </div>
+        <div class="right">
+            <div id="one">
+                <h2 class="t">Guess the number from 1 to 100</h2>
+                <div class="triangle"></div><br>
+                <label for="number" id="num"><strong> ENTER THE NUMBER : </strong></label>
+                <input type="text" id="number" name="number" /><br><br>
+                <input type="submit" value="SUBMIT" id="submit" onclick="compare()">
+            </div>
+            <div id="two">
+                <p> congrats! you have won 👏 </p>
+            </div>
+            <div id="three">
+                <p> sorry better luck next time 😟 </p>
+            </div>
+        </div>
+        
+    </div>
+    <br><br>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
